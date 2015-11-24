@@ -529,7 +529,9 @@ function updatePositions() {
 
   // move reference to scrollTop outside of loop
   var scrollTop = document.body.scrollTop;
-  for (var i = 0; i < items.length; i++) {
+  // optimization: store items.length in variable
+  var itemsLength = items.length;
+  for (var i = 0; i < itemsLength; i++) {
     var phase = Math.sin((scrollTop / 1250) + (i % 5));
     items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
   }
