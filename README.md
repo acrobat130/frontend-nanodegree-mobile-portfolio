@@ -81,6 +81,9 @@ Optimizations to views/js/main.js (for pizza.html page):
 -updatePositions functin: moved reference to "items" outside of function
 - randomPizzaContainer: added will-change: transform to css
 - changePizzaSizes function: changed querySelectorAll to getElementsByClassName
+- changePizzaSizes function: moved randomPizzas.length into variable outside of for loop
+ - updatePosition function: moved items.length into variable outside of for loop
+ - updatePosition function: moved declaration of phase variable outside of for loop
 
 
 
