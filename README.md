@@ -84,6 +84,7 @@ Optimizations to views/js/main.js (for pizza.html page):
 - changePizzaSizes function: moved randomPizzas.length into variable outside of for loop
  - updatePosition function: moved items.length into variable outside of for loop
  - updatePosition function: moved declaration of phase variable outside of for loop
+ - DOMContentLoaded event listener: moved declaration of elem variable outside of for loop
 
 
 

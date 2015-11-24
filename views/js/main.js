@@ -556,8 +556,10 @@ document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
   // make i < 20 instead of 200 - probably won't have more than 30 pizzas on screen at once
+  // optimization: declare elem outside of loop
+  var elem;
   for (var i = 0; i < 30; i++) {
-    var elem = document.createElement('img');
+    elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
     elem.style.height = "100px";
