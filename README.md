@@ -79,7 +79,7 @@ Optimizations to views/js/main.js (for pizza.html page):
 - updatePositions function: changed querySelectorAll to getElementsByClassName
 - mover class: added will-change: transform to css
 -updatePositions functin: moved reference to "items" outside of function
-
+-randomPizzaContainer: added will-change: transform to css
 
 
 
