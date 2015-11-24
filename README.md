@@ -1,3 +1,34 @@
+In order to run this project application,
+1. Clone this repo to your local machine.
+2. Type "python -m SimpleHTTPServer" into the terminal to start a local server.
+3. In your browser, navigate to http://localhost:8000 (8000 or whatever port the server is listening on).
+
+The following optimizations were made to meet the specifications for the Critical Rendering Path, Frame Rate, and Computation Efficiency:
+
+Optimizations for index page:
+- rezised, compressed images
+- added async script tags
+- made css non-blocking on page load
+
+Optimizations to views/js/main.js (for pizza.html page):
+- refactored pizza slider into % widths to remove forced synchronous layout
+- moved pizzasDiv reference to document.getElementById outside of for loop around line 490
+- updatePositions function: moved reference to scrollTop outside of loop
+- updatePositions function: changed max number of pizzas from 200 to 30
+- updatePositions function: changed querySelectorAll to getElementsByClassName
+- mover class: added will-change: transform to css
+-updatePositions functin: moved reference to "items" outside of function
+- randomPizzaContainer: added will-change: transform to css
+- changePizzaSizes function: changed querySelectorAll to getElementsByClassName
+- changePizzaSizes function: moved randomPizzas.length into variable outside of for loop
+ - updatePosition function: moved items.length into variable outside of for loop
+ - updatePosition function: moved declaration of phase variable outside of for loop
+ - DOMContentLoaded event listener: moved declaration of elem variable outside of for loop
+ - DOMContentLoaded event listener: moved reference to DOM outside of for loop
+
+
+########## Original Project Instructions ############
+
 ## Website Performance Optimization portfolio project
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
@@ -72,20 +103,6 @@ Feeling uninspired by the portfolio? Here's a list of cool portfolios I found af
 * <a href="http://www.roxannecook.com/">http://www.roxannecook.com/</a>
 * <a href="http://www.84colors.com/portfolio.html">http://www.84colors.com/portfolio.html</a>
 
-Optimizations to views/js/main.js (for pizza.html page):
-- moved pizzasDiv reference to document.getElementById outside of for loop around line 490
-- updatePositions function: moved reference to scrollTop outside of loop
-- updatePositions function: changed max number of pizzas from 200 to 30
-- updatePositions function: changed querySelectorAll to getElementsByClassName
-- mover class: added will-change: transform to css
--updatePositions functin: moved reference to "items" outside of function
-- randomPizzaContainer: added will-change: transform to css
-- changePizzaSizes function: changed querySelectorAll to getElementsByClassName
-- changePizzaSizes function: moved randomPizzas.length into variable outside of for loop
- - updatePosition function: moved items.length into variable outside of for loop
- - updatePosition function: moved declaration of phase variable outside of for loop
- - DOMContentLoaded event listener: moved declaration of elem variable outside of for loop
- - DOMContentLoaded event listener: moved reference to DOM outside of for loop
 
 
 
