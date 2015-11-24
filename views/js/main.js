@@ -471,8 +471,9 @@ var resizePizzas = function(size) {
     }
     // optimization: changed querySelectorAll to getElementsByClassName
     var randomPizzas = document.getElementsByClassName("randomPizzaContainer");
-
-    for (var i = 0; i < randomPizzas.length; i++) {
+    // optimization: store randomPizzas.length in variable
+    var randomPizzasLength = randomPizzas.length;
+    for (var i = 0; i < randomPizzasLength; i++) {
       randomPizzas[i].style.width = newWidth + "%";
     }
   }
