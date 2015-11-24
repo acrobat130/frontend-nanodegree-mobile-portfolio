@@ -558,6 +558,8 @@ document.addEventListener('DOMContentLoaded', function() {
   // make i < 20 instead of 200 - probably won't have more than 30 pizzas on screen at once
   // optimization: declare elem outside of loop
   var elem;
+  // optimization: move DOM reference outside of for loop
+  var movingPizzas1 = document.getElementById("movingPizzas1");
   for (var i = 0; i < 30; i++) {
     elem = document.createElement('img');
     elem.className = 'mover';
@@ -566,7 +568,7 @@ document.addEventListener('DOMContentLoaded', function() {
     elem.style.width = "73.333px";
     elem.basicLeft = (i % cols) * s;
     elem.style.top = (Math.floor(i / cols) * s) + 'px';
-    document.querySelector("#movingPizzas1").appendChild(elem);
+    movingPizzas1.appendChild(elem);
   }
   updatePositions();
 });
