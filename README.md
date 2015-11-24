@@ -73,10 +73,12 @@ Feeling uninspired by the portfolio? Here's a list of cool portfolios I found af
 * <a href="http://www.84colors.com/portfolio.html">http://www.84colors.com/portfolio.html</a>
 
 Optimizations to views/js/main.js (for pizza.html page):
-- updatePositions function: moved reference to document body outside of loop
 - moved pizzasDiv reference to document.getElementById outside of for loop around line 490
-- updatePositions function: moved reference to all .mover classes outside of function
-
+- updatePositions function: moved reference to scrollTop outside of loop
+- updatePositions function: changed max number of pizzas from 200 to 20
+- updatePositions function: changed querySelectorAll to getElementsByClassName
+- mover class: added will-change: transform to css
+-updatePositions functin: moved reference to "items" outside of function
 
 
 
