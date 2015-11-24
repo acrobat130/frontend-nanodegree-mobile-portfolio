@@ -75,7 +75,7 @@ Feeling uninspired by the portfolio? Here's a list of cool portfolios I found af
 Optimizations to views/js/main.js (for pizza.html page):
 - updatePositions function: moved reference to document body outside of loop
 - moved pizzasDiv reference to document.getElementById outside of for loop around line 490
-- added will-change: transform to mover class
+- updatePositions function: moved reference to all .mover classes outside of function
 
 
 
