@@ -75,11 +75,12 @@ Feeling uninspired by the portfolio? Here's a list of cool portfolios I found af
 Optimizations to views/js/main.js (for pizza.html page):
 - moved pizzasDiv reference to document.getElementById outside of for loop around line 490
 - updatePositions function: moved reference to scrollTop outside of loop
-- updatePositions function: changed max number of pizzas from 200 to 20
+- updatePositions function: changed max number of pizzas from 200 to 30
 - updatePositions function: changed querySelectorAll to getElementsByClassName
 - mover class: added will-change: transform to css
 -updatePositions functin: moved reference to "items" outside of function
--randomPizzaContainer: added will-change: transform to css
+- randomPizzaContainer: added will-change: transform to css
+- changePizzaSizes function: changed querySelectorAll to getElementsByClassName
 
 
 
