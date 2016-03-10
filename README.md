@@ -1,16 +1,18 @@
+## Website Performance Optimization portfolio project
+
 In order to run this project application,
-1. Clone this repo to your local machine.
-2. Type "python -m SimpleHTTPServer" into the terminal to start a local server.
-3. In your browser, navigate to http://localhost:8000 (8000 or whatever port the server is listening on).
+  1. Fork and clone this repo to your local machine.
+  2. Type `python -m SimpleHTTPServer` into the terminal to start a local server.
+  3. In your browser, navigate to `http://localhost:8000` (8000 or whatever port the server is listening on).
 
-The following optimizations were made to meet the specifications for the Critical Rendering Path, Frame Rate, and Computation Efficiency:
+__The following optimizations were made to meet the specifications for the Critical Rendering Path, Frame Rate, and Computation Efficiency:__
 
-Optimizations for index page:
-- rezised, compressed images
-- added async script tags
-- made css non-blocking on page load
+__Optimizations for index page:__
+  - rezised, compressed images
+  - added async script tags
+  - made css non-blocking on page load
 
-Optimizations to views/js/main.js (for pizza.html page):
+__Optimizations to views/js/main.js (for pizza.html page):__
 - refactored pizza slider into % widths to remove forced synchronous layout
 - moved pizzasDiv reference to document.getElementById outside of for loop around line 490
 - updatePositions function: moved reference to scrollTop outside of loop
@@ -27,9 +29,9 @@ Optimizations to views/js/main.js (for pizza.html page):
  - DOMContentLoaded event listener: moved reference to DOM outside of for loop
 
 
-########## Original Project Instructions ############
+### Original Project Instructions
 
-## Website Performance Optimization portfolio project
+### Website Performance Optimization portfolio project
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
 
